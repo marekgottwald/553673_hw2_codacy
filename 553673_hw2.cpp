@@ -12,7 +12,7 @@ void vulnerabilities() {
     ptr = new char[5]; delete[] ptr; delete[] ptr; // Double Free
     int* nPtr = nullptr; // Null Pointer Dereference
     *nPtr = 1;
-    strcpy(b, "longtext"); // Stack Buffer Overflow
+    strcpy(b, "very long text"); // Stack Buffer Overflow
     std::cout << arr[10]; // Array Index Out of Bounds
     long lValue = LONG_MAX; int iValue = (int)lValue; // Improper Type Conversion
     int underflow = INT_MIN; underflow--; // Signed Integer Underflow
